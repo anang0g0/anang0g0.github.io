@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="baidu-site-verification" content="093lY4ziMu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="A hexo theme">
+    <meta name="keyword"  content="dusign, hexo-theme-snail">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
+    <title>
+        
+          開発日記 - Hexo-theme-snail
+        
+    </title>
+
+    <link rel="canonical" href="https://anang0g0.github.io/2020/09/03/開発日記/">
+
+    <!-- Bootstrap Core CSS -->
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+
+    <!-- Custom CSS --> 
+    
+        
+<link rel="stylesheet" href="/css/dusign-light.css">
+
+        
+<link rel="stylesheet" href="/css/dusign-common-light.css">
+
+        
+<link rel="stylesheet" href="/css/font-awesome.css">
+
+        
+<link rel="stylesheet" href="/css/toc.css">
+
+        <!-- background effects end -->
+    
+    
+    <!-- Pygments Highlight CSS -->
+    
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+    
+<link rel="stylesheet" href="/css/widget.css">
+
+
+    
+<link rel="stylesheet" href="/css/rocket.css">
+
+
+    
+<link rel="stylesheet" href="/css/signature.css">
+
+
+    
+<link rel="stylesheet" href="/css/fonts.googleapis.css">
+
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- photography -->
+    
+<link rel="stylesheet" href="/css/photography.css">
+
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- background effects start -->
+    
+    <!-- background effects end -->
+
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../../img/default.jpg')
+                /*post*/
+            
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/dusign.png');
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                        </div>
+                        <h1>開発日記</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Goldwasser on
+                            2020-09-03
+                        </span>
+
+                        
+                            <div class="blank_box"></div>
+                            <span class="meta">
+                                Words <span class="post-count">3.8k</span> and
+                                Reading Time <span class="post-count">16</span> Minutes
+                            </span>
+                            <div class="blank_box"></div>
+                            <!-- 不蒜子统计 start -->
+                            <span class="meta">
+                                Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+                            </span>
+                            <!-- 不蒜子统计 end -->
+                        
+
+                    </div>
+                
+
+                </div>
+            </div>
+        </div>      
+    </div>
+
+    
+    <div class="waveWrapper">
+        <div class="wave wave_before" style="background-image: url('/img/wave-light.png')"></div>
+        <div class="wave wave_after" style="background-image: url('/img/wave-light.png')"></div>
+    </div>
+    
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Parrhesia Republic</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/categories/">Categories</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/photography/">Photography</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                    
+                    <li>
+                        <a href="YOUR_CHINESE_BLOG_URL" target="_blank">Chinese Blog</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p>３．開発日記</p>
+<p>20191218</p>
+<p>GF(4096)上定義されたバイナリGoppa符号を生成できるようになった。この計算には14分もかかるので今後何か別の計算方法を考えないといけない。(oplib.cpp)<br>因みに、QC-MDPCなんで邪道だと思っているので、オリジナルの古典的Goppa符号を使っている。</p>
+<p>同時に、LU分解法にヒントを得た可逆スクランブル行列を生成できるようになった。(lu.c)</p>
+<p>公開鍵のパラメーターは、[n,k,t]=[4096,2040,85]である。</p>
+<p>20191221</p>
+<p>GF4096において、型をunsigned shortにして、バイナリ生成行列を出力させる鍵生成まで完成。(oplib.cpp)</p>
+<p>20191226</p>
+<p>開発メモ。誤りロケータだけは実装完了。バイナリバージョンの場合は誤りの位置を決定するだけで済むのでこれで完成。(chen.c)</p>
+<p>既知のバグ：誤りの値を計算するときに、0になる場合がある。これは誤りロケータと、誤り値関数にまだ最小公倍数、つまり<br>1次式が残されている証拠で、この点を解決するためにユークリッドアルゴリズムに多少の改良を加える必要がある。この点については<br>来年に目標にしたい。(oplib.c)</p>
+<p>20191227</p>
+<p>誤りロケータもバグっていることが判明。しかし体力の限界。もう十日近く15時間やってるけど、そろそろ限界。<br>今のところ一番確実に動くのがchen.cなので、これをもとにバグ取りをしようと思う。でも今年はもうおしまい。<br>わずか１０００行のプログラムの挙動が理解できない私は低能だｗ</p>
+<p>手で計算できないものは計算機を使って計算させてバグ取りをしないといけないし、デバック用のプログラムも書かないといけないのでまた来年。</p>
+<p>20191229</p>
+<p>バグを最後の1つに絞り込めた。現在デバッグモジュールを作成中。</p>
+<p>20191230</p>
+<p>ついにバグを突き止めた。生成行列の特定の列が０ベクトルだったという落とし穴がｗ。アルゴリズムは間違いなかった。<br>どこを探しても問題なかったから、まさかと思って調べてみたら０だったというｗ。しかも１１個もあった。<br>陽性かくにん、よかった。あとは０のない生成行列をどう作るかで、トレースチェックだけすればいいんじゃないかと思うのだが違うんだろうか？<br>これでもかなりマシになったほうなのだが、まだ重解を持つ可能性があるので完全にバグがないとは言えない。<br>とりあえずバイナリの場合は誤り位置だけ正確に計算できればいいので、これで完成しているはず。<br>あとは実際に公開鍵を使って暗号化復号化をするというIOの部分を作ることになる。あとソースにコメントもつけないといけない。(oplib.c)</p>
+<p>20191231</p>
+<p>とりあえずバグはなくなったはずなのですが、まだあるかもしれません。そしてこのコードをどういう形で使うのかはまだ決めてません。<br>PGPのような完璧なアプリを作るのはちょっと荷が重いし、Cの初心者レベルのコードなので興味のある人が最適化したり、もっとエレガントな<br>コードを書いてくれればいいのですが。とりあえず趣味でやった割にはよくできたと自分を褒めてあげたいですｗ。</p>
+<p>20200131</p>
+<p><a href="https://csrc.nist.gov/projects/post-quantum-cryptography/round-2-submissions" target="_blank" rel="noopener">https://csrc.nist.gov/projects/post-quantum-cryptography/round-2-submissions</a></p>
+<p>アメリカのNISTで進んでいる次世代公開鍵暗号の選定、第2ラウンドまでにMcEliece暗号が残っているようです。今の所符号に基づく暗号と講師に基づく暗号が拮抗しているようです。私もアセンブリマクロを使って最適化してみようかな。頑張れMcEliece！</p>
+<p><a href="https://klevas.mif.vu.lt/~skersys/vsd/crypto_on_codes/goppamceliece.pdf" target="_blank" rel="noopener">https://klevas.mif.vu.lt/~skersys/vsd/crypto_on_codes/goppamceliece.pdf</a></p>
+<p>入れ知恵になるかもしれないですがこれも参考にしてみたいと思います。どうも外部ライブラリを使った実装ばかりで私みたいに一枚岩の自己完結プログラムがないようで。</p>
+<p>20200202</p>
+<p><a href="https://en.wikipedia.org/wiki/Binary_Goppa_code#Decoding" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Binary_Goppa_code#Decoding</a></p>
+<p>これのおかげでやっとパターソンアルゴリズムを理解できた。シンドローム多項式の逆多項式はゴッパ多項式が既約のとき、ユークリッドアルゴリズムで<br>計算できる。そしてバイナリGoppa符号の場合、符号長は変わらず次元だけが縦に引き伸ばされるので、シンドローム多項式は拡大体のときと同じ多項式である。<br>このとき逆多項式とその平方が計算できるので、解くべき誤り位置関数の次数はシンドローム多項式の半分になる。だから拡大体のときより<br>Goppa多項式の次数は半分で済む。ということはバイナリバージョンを作らなければならない。やる気が出たらやろう。</p>
+<p><a href="http://lupus.is.kochi-u.ac.jp/shiota/misc/field/FiniteField.html" target="_blank" rel="noopener">http://lupus.is.kochi-u.ac.jp/shiota/misc/field/FiniteField.html</a></p>
+<p>あとgithubにはなかったけれど、プロが書いたMcEliece暗号のデモがあって、エレガントに64ビットに最適化されていて鍵生成はものすごく早かった。<br>本来ならこうあるべきだけど自分にはその実力がない。</p>
+<p>まだ理解があやふやな部分があるので、ｔ個のエラーを訂正するのにｔ次規約多項式の自乗を使ってｔ個のエラーを訂正すれば今の方法を変更しなくても<br>済むだろうと思った。Goppa多項式の次数は半分に減るので結果は同じだ。アルゴリズムを保ったまま秘密多項式の次数を下げられる。</p>
+<p>20200209</p>
+<p><a href="https://digitalcommons.csbsju.edu/cgi/viewcontent.cgi?article=1019&amp;context=honors_theses" target="_blank" rel="noopener">https://digitalcommons.csbsju.edu/cgi/viewcontent.cgi?article=1019&amp;context=honors_theses</a></p>
+<p>これもすごい。</p>
+<p>20200222</p>
+<p>パターソンアルゴリズムを完全実装しました。このアルゴリズムの実現のために多項式の平方根を計算する関数などを追加しました。<br>我ながらいい感じで使えているのでよかったと思います。ほかの人が満足するかわかりませんがｗ。このアルゴリズムによって、<br>ｔ次の多項式に対してt個のバイナリエラーが訂正できます。できるかどうかわかりませんでしたができました。(polib.c)</p>
+<p>20200227</p>
+<p>いよいよコードレビュー。まだomodとかの終了条件を理解してないのでそこから始めることになる。インデントとかは後回しになるかも。<br>パラメータを変更した。変更後のパラメータは[n,k,t]=[6688,3328,256]である。</p>
+<p>アルゴリズムの検証作業に入ります。元ネタはここー＞</p>
+<p><a href="https://github.com/davidhoo1988/Code_Based_Cryptography_Python" target="_blank" rel="noopener">https://github.com/davidhoo1988/Code_Based_Cryptography_Python</a></p>
+<p>こういうのがあったんだけど古くて動かない。GF2で既約な多項式を見つけるのは早いけど、拡大体上で既約な多項式を見つけるのは<br>とても遅い。なので、やはりランダムに取ってきて使える鍵だけを使うほうが早い気がする。正攻法より効率的かも。</p>
+<p>20200228</p>
+<p>文献の追加。バグトラップを仕掛けてバグを見つけています。ユークリッドの方はほぼ完璧なんですが、パターソンアルゴリズムでエラーロケーター<br>が計算できたり出来なかったりしているバグを見つけて修正方法を考えています。既約多項式なら完全なので、先に正しい鍵を用意するのが早いのかも<br>しれませんが、もしそれでだめだったらアルゴリズムのバグですね。<br>でも拡大体上で既約多項式を見つけるのはsagemathでもすごく時間がかかるので悩んでいます。</p>
+<p><a href="https://www.hyperelliptic.org/tanja/students/m_marcus/whitepaper.pdf" target="_blank" rel="noopener">https://www.hyperelliptic.org/tanja/students/m_marcus/whitepaper.pdf</a></p>
+<p>20200229</p>
+<p>バグが取れた。基本計算は完成したので、これから電子署名と暗号通貨を作ります。</p>
+<p><a href="https://classic.mceliece.org/" target="_blank" rel="noopener">https://classic.mceliece.org/</a></p>
+<p>20200303</p>
+<p>今日は暗号化関数の前処理としてハッシュ関数の他の人が書いた使えそうなリポジトリを探してコピーして改ざんした。<br>SHA3を使う予定。OAEP処理するため。</p>
+<p>20200304</p>
+<p>サブフォルダdecomp内の、分割コンパイルできるように切り離されたソースと簡単なMakefileを置き換えた。<br>更にハッシュ関数としてsha3を他のリポジトリからcloneして暗号化関数に使用した。<br>main関数の中にあったシンドローム計算のための処理を関数に分離した。<br>私がこれでいいんだからこれでいいのだ。<br>今の所実用レベルのパラメータを実装したものは見当たらない。解読されているような少し昔の方式があるだけだ。<br>これが気に入らないというなら自分で論文を読んで1から書くか、改造すればいいだけであって分割コンパイルもインデントも私は必要としていない。<br>暗号化ができればそれでいいのだ。そういうことができるプロもいるだろうからその人の実装を待てばいい。</p>
+<p>20200305</p>
+<p>512ビットの秘密鍵を暗号化復号化できるようになった。後はファイルやバッファも暗号化できるようにしたい。<br>バイナリ公開鍵は半分しか作ってないので、それも完成させる必要があるけど、今はこれで十分な気がする。</p>
+<p>OAEP処理のつもりですが、encrypt関数でランダムエラーにハッシュをかけて、そのハッシュ値を64バイトの鍵データにXORします。<br>続けて、エンダムエラーを符号化してそのシンドロームをファイルに出力します。このファイル名は、enc.skです。<br>復号化はdecrypt関数です。もっとわかりやすくしないといけないですね。新しい関数を作ることばかりで、全然保守してない。<br>マイペースｗ。</p>
+<p>20200306</p>
+<p>蛇足かもしれないけどファイルの暗号化復号化の関数を作った。<br>復元したエラーベクトルにハッシュ関数をかけて、そのハッシュ値をファイルのデータにXORして暗号化する公開鍵/秘密鍵のコンパチブル関数。<br>暗号化の方法ですが、プログラムの中でfileenc()関数やfiledec関数を呼び出して、実行時に</p>
+<p>./a.out file1 file2 file3</p>
+<p>とやるとfile1に暗号化したいファイル名、file2に暗号化後のファイル名、file3に復号後のファイル名でテストできます。</p>
+<p>一応ライブラリみたいな感じにしたいので、使い方についてはもう少し詳しく書く予定です。<br>マニュアルみたいなことをここに書くべきかと。もっと詳しい人が見れば、十分な暗号化にはなっていない可能性があります。<br>エディタでみると記号みたいなものが出てくるので、完全に砂のようにランダム化されていない感じがします。<br>20200313</p>
+<p>とりあえず関数encryptで512ビット秘密鍵は暗号化復号化できるようになったので、Niederreiter暗号は完成していると言っていい。<br>残るのは鍵をバイナリにして生成と復号をするかというUIの部分だけだが、ここでPGPのような暗号アプリを作るつもりはないので、<br>今後コードを利用して必要なアプリや各自応用をしてほしい。<br>自分もできる限りコードの可読性を上げるつもりなのでメンテナンスは続けていく。<br>バイナリ符号を扱うことができるようにするところまでは最低限やっておきたい。</p>
+<p>20200315</p>
+<p>今windows版を作っています。こうして違う環境とデバッグをすると、一見うまく動いているように見えるだけという怪しいコードが結構ありますね。<br>できるだけエラーを減らします。それにしてもｇｃｃが性能がいいのかほとんどエラーは出ません。24時間耐久テストを実行してます。</p>
+<p>20200320</p>
+<p>AMD性最適化コンパイラ（<a href="https://developer.amd.com/amd-aocc/）" target="_blank" rel="noopener">https://developer.amd.com/amd-aocc/）</a></p>
+<p>AMDを使っているならこちらで試してみてください。</p>
+<p>このプログラムは今まで学習してきたことの集大成として実験的に古典的Goppa符号を複合するアルゴリズムを実装したものです。<br>応用としては公開鍵暗号やブロックチェーンがあります。<br>あくまでも自分用なのでおすすめはしません。<br>特徴としては、一変数多項式を単項式の配列で表現するという直感的な四則演算を設計に取り入れました。<br>アルゴリズムは設計者の思考パターンを反映するのかもしれません。<br>設計方法が悪いので最適化には向いてないかもしれませんが、とにかくコードの美しさよりまともに動くプログラムを優先的に作ろうとしたものです。<br>外部ライブラリを必要とせず、このリポジトリだけで完結しています。<br>とりあえず５１２ビットの秘密鍵を暗号化復号化ができるようになったので、今後はバイナリ符号に対応するのとメンテナンスとして可読性を上げていくようにします。<br>ちょっとづつですが毎日いらない変数を消したりしてます。<br>分割コンパイルするとオブジェクト間の最適が出来ないらしいので、意図的に分割コンパイルはしてません。<br>メインのソースにインクルードする形で一つのファイルにまとめています。<br>どちらかというとアプリではなく、特殊な科学計算なので速度優先で書いてます。</p>
+<p><a href="https://classic.mceliece.org/" target="_blank" rel="noopener">https://classic.mceliece.org/</a></p>
+<p>こちらにプロが作った比較用のサンプルコードがあります。</p>
+<p>20200321</p>
+<p>特に変わってませんが、おすすめのコンパイラオプションを見つけたので書いておきます。<br>オリジナルのMakefileは汎用的なものですが、AMDのZENアーキテクチャに特化したバイナリコードを生成するためのオプションは次のようになります。</p>
+<p>gcc -O3 -mtune=znver2 -march=znver2 -ffast-math -funroll-loops  -fopenmp oplib.c</p>
+<p>これでバグトラップ有りで２６秒台がコンスタントに出ました。<br>gccもオプション次第でAMD純正コンパイラと遜色ない性能を出せることがわかりました。（ver 9.2）</p>
+<p>最適化オプションを全くつけないと、１分２５秒でした。<br>素人の分際で最適化なんておこがましいと言われそうですが、何もしないよりマシだと思ったので、そのへんはコンパイラ任せにしようという感じですｗ．</p>
+<p>20200322</p>
+<p>使わない変数を少し削除した。<br>公開鍵計算のループを並列化に成功。なんと10秒で鍵生成から暗号化復号化までできる。<br>一方で、処理が高速化した関係か新たなバグが見つかった。<br>あまり喜んでもいられない。<br>よく考えてみれば鍵生成は最初の一回だけなので、20秒位は我慢できるかもしれない。<br>途中の処理でエラーがでるくらいなら、そのくらいの欠点には目をつぶるしかないのかもしれない。<br>並列化して生成された鍵を使うと5分もしないうちにエラーで止まってしまう。<br>こんなに頻繁にエラーが出ては使い物にならない。<br>デバッグしてもいいのだが、果たしてその努力に見合う価値があるかどうかは分からない。</p>
+<p>20200223</p>
+<p>並列処理で、鍵生成という一回限りの処理にバグがある。<br>でもそのバグを取る労力に見合う効果がないので、鍵生成の並列化はしないことにする。<br>今日は調子が悪いみたいでプログラムをしているとイライラする。<br>毎回鍵を生成しないようにファイルから読み込もうとしたのだがうまく行かないので、一昨日のプログラムに戻した。<br>そして一昨日のプログラムにバグが合ったのでそれを修正した。<br>差分の読み方がわからないから、ファイルビューで見てまるごとコピペしただけの一日。</p>
+<p>追記：<br>言われるがままに分割コンパイルなんてなれないことをしたおかげで、昔動いていたファイルから鍵を読み込む方法がうまく行かなくなってしまった。<br>でも古いファイルをフォルダにまとめておいたのが動いたので事なきを得た。<br>我が道を行ったほうがいいようだ。<br>鍵生成なしだと暗号化復号化にOpenMPしないで9秒かかる。</p>
+<p>20200324</p>
+<p>バグを特定した。なんといつも決まった列が0になるというバグ。いつも418の倍数の列だけが0になる。<br>明らかな規則性を持つので、どこでそれが発生しているのかを調べればいいことになる。<br>これが明らかになれば、並列化の実現になることは間違いない。</p>
+<p>原因判明。マルチスレッドの副作用。符号長６６８８を１６個に分割するとちょうど４１８になる。<br>１６個のスレッドが同時に動く時、一つのスレッドが４１８列を処理するのだが、ちょうど４１８番目の列が処理されずに残ってしまう。<br>つまり計算されない列が出てきてしまう。これを再計算して埋め合わさない限り完全な符号にはならない。<br>この手間を考えるとセキュリティ上完全な符号を作ったほうがいいので、わざわざ並列化して特定の列にエラーが来ないように小細工をするより馬鹿正直に１列づつ逐次処理をしたほうがいいということになる。<br>速さを取るか、セキュリティを取るかで考えれば２０秒の鍵生成のほうが確実だと言える。<br>短縮符号としてある特定の列を取り除き、計算しないという方法も考えられるが、そんなことをする意味がない。</p>
+<p>追記：原因不明のバグもある。仮に４１８の倍数にエラーが来ないようにしても異常終了する場合がある。<br>その点、逐次処理をしている方には全くエラーが出ない。並列処理をしたものは５分と立たない間にエラーで止まる。</p>
+<p>20200325</p>
+<p>並列化しようとしても、変数が１つなので他のスレッドから上書きされて並列化出来ない。<br>最終的にほしいのは行列なので無理やり並列化する方法もあるかもしれないが、まだよく並列化アルゴリズムの動作原理を理解していない。<br>ループの処理したい範囲をスレッドに指定してやって、各スレッドごとに変数を用意してやればできる気がする。</p>
+<p>追記；<br>para.cで生成多項式を固定した場合、パラレル処理とシリアル処理とで同じ鍵を生成することを確認した。<br>つまり同じ鍵をより早く並列処理で生成できたことになる。<br>しかしまだ油断できない。</p>
+<p>20200326</p>
+<p>並列化プログラミングでいくつかのキーワードを試したがうまく行かない。<br>全く同じ鍵ができるとは限らない。同じ鍵ができるときもあるという感じだ。スレッドIDがランダムに決まるせいかもしれない。<br>でももし違うとしてもシーケンシャルで生成した行列の列を入れ替えたものができるだけなので、本質的に同じ生成行列を出力していることになる。<br>そして実際そうやって作った生成行列も、もし同じならシーケンシャルと同じくらいの確実さで暗号化に使用できるはずだ。<br>というか、同じ鍵から生成したのではない生成行列だったら、そもそも復号が出来ないはずだから同じとみなしてもいいはずだ。</p>
+<p>追記：<br>並列処理のテストバージョンである　test_prll.c　を追加。<br>ファイル内のdeta関数が行列の並列処理をして、高い確率でdetで逐次処理して生成した行列と一致する。<br>成功確率が高い気がするが、たまにハズレる。</p>
+<p>20200327</p>
+<p>引き続きtest_prll.cで耐久性実験を継続中。24時間動かしても止まらない。計算はかなり安定してきていると思う。<br>最も解空間が3000ビット以上もあるので1日動かしたからといって完璧だとは言えないのだが。<br>AMD Ryzen7 2700Xを25000円で買っておいてよかったと思う。<br>今のままでも十分早いし、買い替えるだけのメリットがないという評価だったので、Ryze3000シリーズはあまり評判のいいものではないようだ。<br>今買い替えるより次のプロセッサまで待った方がよさそう。去年買ったばかりなので減価償却してない。<br>時期プロセッサは一つのコアで処理できるスレッドの数が2倍になるという噂だ。</p>
+<p>負荷のかかった状態で並列計算させた場合の結果が、AMD純正コンパイラとgccの間で差が出るようだ。<br>AMDのほうが早い気がするのは偶然だろうか。<br>例えば、グローバル変数の行列に複数のスレッドがアクセスしようとしたときに排他制御でブロックされたスレッドは書き込みに失敗して<br>その列が０になってしまうようだけど、AMDのコンパイラの実行ファイルだとこのような衝突を防いでくれるようでいつも一回でうまく行く。</p>
+<p>20200328</p>
+<p>引き続きでバック作業。確実視されていたdecode関数でエラーがでるので、pattarsonをコメントアウトして集中的にデバック作業を行っている。<br>一方で以下のサイトを見つけた。</p>
+<p><a href="http://arbitrage.jpn.org/it/ryzen-7-2700x/" target="_blank" rel="noopener">http://arbitrage.jpn.org/it/ryzen-7-2700x/</a></p>
+<p>このようにRyzenプロセッサはマルチスレッドが有利に作られているので、AMD純正コンパイラとマルチスレッドプログラミングは相性がいいと言っていい。<br>つまりOpenMPを多用するようなプログラミングで真の性能を引き出せるというわけだ。<br>Ryzenの性能を引き出すために、今後の目標としては量子計算機よりも並列計算の動作原理を中心に勉強するほうが大事らしい。</p>
+<p>20200329</p>
+<p>xgcdにバグを発見。とりあえず別関数を用意して、そちらで対処。decodeにはogcdを、pattartsonにはxgcdを使うことにしてデバッグ中。<br>一応終了条件を変えてみたけど、正しいかどうかは実験中。これでもまだエラーがでるならogcdを使うほうが安全かも。</p>
+<p>20200330</p>
+<p>24時間以上動いてますがまだエラーが出ません。やはりXGCDのバグだったのでしょうか？<br>並列計算で同じ鍵ができるというのは20連発成功という確率です。<br>今までNiederreiterの読み方がわからなかったんですが、ニーダーライダーというらしいです。かっこいいですね。</p>
+<p>20200331</p>
+<p>またエラーで停止。朝起きたら止まってた。気持ちが悪いことにxgcdの終了条件が２つになってしまう。<br>何か根本的に間違っているのだが、今はまだわからない。<br>decodeとpattarsonは終了条件が違うようなので、使用する関数をxgcdとogcdに分けました。</p>
+<p>20200403</p>
+<p>運用三日目。依然としてエラーは検出されない。これで完成と言ったところだろうか？<br>これからは電子署名と合わせたブロックチェーンを使ったスマートコントラクトを１から作ることになる。<br>PKI基盤や、ネット上に分散させるような秘密鍵の安全な管理に使う方向で行きたい。</p>
+<p>20200404</p>
+<p>実験終了。跡はバイナリ符号に置き換えるだけ。q進Goppaは完成だ。</p>
+<p>20200405</p>
+<p><a href="https://onoono-life.blogspot.com/2014/04/ccopenmp.html" target="_blank" rel="noopener">https://onoono-life.blogspot.com/2014/04/ccopenmp.html</a></p>
+<p>鍵生成の並列化にはこのサイトの情報が役に立ちました。<br>並列化に当たってはAMD純正のコンパイラを使いました。<br>gccで並列化を実行すると先に終了したスレッドがフライングをして変数のアクセスに失敗して何回もやり直す現象がおきます。<br>Makefileはgccでコンパイルできるように調整したものです。（まだ間違っているかもしれないので修正してください）<br>今日はバグのないバージョンにoplib.cを置き換えて、それ用にMakefileを書き換えました。<br>後はWallオプションで警告を消します。<br>バイナリ公開鍵を使えるようにします。</p>
+<p>それにしてもコロナは一体いつ終息するんでしょうか。<br>これからもっとひどくなるんでしょうか・・・？</p>
+<p>20200412</p>
+<p>Makefileをgccで統一しました。<br>gccでも鍵を並列生成が可能です。<br>実験環境では約一分でした。</p>
+<p>20200413</p>
+<p>鍵生成をdetaにした時、正しく生成できないバグを発見。<br>現在デバッグ中。<br>clangでコンパイルしたときはエラー訂正に失敗しないのですが、gccでコンパイルすると１０分もしないでエラーで止まります。<br>しかも再現性のないエラーなので、gccのバグのような感じです。<br>ただ、aoccのclangではO3オプションが未実装なため、公開鍵を作る処理が遅く、最適化しても３分以上かかります。<br>これがgccだと１分で終わります。<br>そういうわけで完全な答えはないのですが、エラーが怖い人は鍵生成にdetaを使わないで、detを使うようにしてください。<br>鍵生成は別ファイルにして、aoccのclangでコンパイルした専用のコマンドにするかもしれないです。<br>大本のclangをコンパイルインストールしてみましたが、鍵生成は遅いままです。どうやらgcc -O3に当たるオプションは未実装のようです。<br>もし鍵生成を早くしたいのであればgccを指定してください。</p>
+<p>20200416</p>
+<p>clangによる鍵計算を高速化。<br>今まで3分30秒だった鍵計算処理を、pragma指定で2分短縮して1分40秒程度で完了できるようになった。<br>ちなみにgccは1分位。<br>そのまま実行するとスタックオーバーフローを起こすので、ulimit -s 16000と設定すること。<br>また、コンパイラはclangを使うことを強くおすすめする。<br>というのも、行列に複数のスレッドがアクセスしようとするときにclangは自動で排他制御をしているようなのだ。<br>一方gccの方は答えが一発で出ない。<br>繰り返して計算しているうちにclangと同じくらいの遅さになってしまう。<br>ここは正確さと速度の保証があるclangをおすすめしたい。<br>clangはaoccでなくても良いが、コンパイルにものすごく時間がかかるのでストレスになるかも。<br>でも計算結果は正確なのでおすすめする。</p>
+<p>20200417</p>
+<p>gccで鍵生成が1分4秒、clangで1分12秒位まで早くなった。<br>更新ファイルはlu.cのみ。</p>
+<p>20200417</p>
+<p>鍵生成の速度は昨日と変わらず。無理して早くすると正しい結果にならない。<br>今日は鍵生成から復号までの全体をチューニングした。</p>
+<p>20200420</p>
+<p>ダイエット中と体調不良により、暫くお休みします。<br>並列処理をするより、まず64ビット環境に最適化する必要があると思う。<br>何かいい方法が見つかったらやります。</p>
+<p>２．作るに至った経緯</p>
+<p>耐量子計算機暗号のコアの一つとして、古典的Goppa符号の復号法ができれば良い。ここでは暗号化に必要な関数を作りました。<br>現在のところ、2の拡大体に関する復号です。バグがあります。ベータバージョンです。マニュアルもまだ書いてません。<br>QC-MDPCなんか邪道だと思っているので、オーソドックスな実装にしました。実用に耐えるようなパラメータの実装はありませんでした。<br>あるにはあるのですが、外部ライブラリに頼った実装ばかりで、自己完結的に作成できるようなものがないので作りました。<br>現時点（20200306）では、バイナリ公開鍵には対応していません。</p>
+<p>このコードを実装するのに使った書籍は、Oliver PretzelのError-Correcting Codes and Finite Fieldsです。</p>
+<p>その他英語の論文についてはdiary.txtを参照してください。</p>
+<p>このコードの最終目的は軍事レベルの暗号を作ることで、Niederreiter暗号を目指しています。鍵はでかいです。<br>毎月たくさんの新型が生まれている中で、なぜ改良版を使わないのかという人もいるかもしれませんが、<br>一番古いオーソドックスな技術が一番安全だし使えると思ってやっています。動かすときはLinuxでどうぞ。<br>コアダンプしないように作ってあるつもりです。（何らかの標準出力がある）<br>またブロックチェーン技術のためにネット上にあった自作でないSHA3を使い、電子署名モジュールは作るつもりです。<br>誰も作ってないようなので作りました。</p>
+<p>実装は汚いコードですが、ポインタやオブジェクト指向を知らないので素人レベルのコードです。プロなら読めると思います。<br>全部で2000行くらいしかないです。<br>いつか勇者が現れて、私のコードを凌ぐ素晴らしいプログラムを作ってくれることを祈ります。<br>組み込み開発や、JavaScriptなんかにも直接移植できるのではないでしょうか。処理速度が遅いから無理かもしれないけど、<br>最適化は今後の課題です。まだプロセッサの能力をフルに発揮できていません。</p>
+<p>残念ながらまだOpenMPには対応してません。<br>やり方が今一つよくわからないのですが、行列を並列計算させようとしても変な値になってしまいうまく並列化できません。<br>ちなみに開発環境は、LinuxでCPUはAMD　Ryzen7　2700Xです。マルチコアの意味がまるでないｗ。<br>ただその気になればパソコン用のCPUであれば、アセンブラマクロかなんかを使って、コア内で並列処理できると思います。<br>AMDのSIMDは遅いという評判ですがｗ。</p>
+<p>参考文献を開発日記の別ファイルに移しました。今後ここにはマニュアル的なコードを書きたいと思います。</p>
+<p>20200306（ひとことメモ）</p>
+<p>機能拡張と計算結果の信頼性だけに注目しているので、全くコードを読む側のことを考えてません。<br>秘密鍵暗号を使って暗号化するのがいいか、ハッシュ関数を再帰的に使ってストリーム暗号のようにして使うかの比較。<br>実装が悪いのかあまりにも遅いので秘密鍵暗号やファイル暗号化はしないことに。</p>
+<p>20200307</p>
+<p>書くようなことでもないのだが、今のままでは鍵生成は遅く、並列化不可能。<br>AMD専用の最適化コンパイラclangを使って並列化できるところを並列化した。<br>自分の環境では33秒を切るくらいの時間で終わる。<br>特に用途はないので、ベンチマークにしてみてくださいｗ。<br>並列化オプションを外すと33秒後半。gccだと37秒位なので、いかにメーカー製のコンパイラが最適化しているか解る。<br>gccで速度が出ないということは基本的な設計から見直さないといけないのかもしれない。</p>
+<p>20200318</p>
+<p>いま高速化と最適化をしています。元からビックインディアンをリトルインディアンに直しているせいで鍵生成に無駄に時間がかかっています。<br>これは生成多項式が直感的に見やすくなるように次数の高い順から（配列の添字の小さい方から）代入をしているからで、これを改善すれば４倍くらい早くなりそうです。<br>といっても素人の実装なので期待しないでください。</p>
+<p>20200320</p>
+<p>最適化に挑戦してみました。バグトラップを外しでmakeで２７秒台を記録。</p>
+<p>諸事情によりもう更新しません。</p>
+
+                
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2020/09/03/test/" data-toggle="tooltip" data-placement="top" title="test">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/11/01/Hexo-Theme-Snail/" data-toggle="tooltip" data-placement="top" title="Hexo-Theme-Snail">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                <!-- tip start -->
+                
+
+                
+                <div class="comment_notes">
+                    <p>
+                        This is copyright.
+                    </p>
+                </div>
+                
+                <!-- tip end -->
+
+                <!-- Music start-->
+                
+                
+<link rel="stylesheet" href="/css/music-player/fonts/iconfont.css">
+
+
+<link rel="stylesheet" href="/css/music-player/css/reset.css">
+
+
+<link rel="stylesheet" href="/css/music-player/css/player.css">
+
+
+<div class="music-player">
+    <audio class="music-player__audio" ></audio>
+    <div class="music-player__main">
+        <div class="music-player__blur"></div>
+        <div class="music-player__disc">
+            <div class="music-player__image">
+                <img width="100%" src="" alt="">
+            </div>
+            <div class="music-player__pointer"><img width="100%" src="/img/cd_tou.png" alt=""></div>
+        </div>
+        <div class="music-player__controls">
+            <div class="music__info">
+                <h3 class="music__info--title">...</h3>
+                <p class="music__info--singer">...</p>
+            </div>
+            <div class="player-control">
+                <div class="player-control__content">
+                    <div class="player-control__btns">
+                        <div class="player-control__btn player-control__btn--prev"><i class="iconfont icon-prev"></i></div>
+                        <div class="player-control__btn player-control__btn--play"><i class="iconfont icon-play"></i></div>
+                        <div class="player-control__btn player-control__btn--next"><i class="iconfont icon-next"></i></div>
+                        <div class="player-control__btn player-control__btn--mode"><i class="iconfont icon-loop"></i></div>
+                    </div>
+                    <div class="player-control__volume">
+                        <div class="control__volume--icon player-control__btn"><i class="iconfont icon-volume"></i></div>
+                        <div class="control__volume--progress player_progress"></div>
+                    </div>
+                </div>
+                <div class="player-control__content">
+                    <div class="player__song--progress player_progress"></div>
+                    <div class="player__song--timeProgess nowTime">00:00</div>
+                    <div class="player__song--timeProgess totalTime">00:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/music-player/utill.js"></script>
+
+
+<script src="/js/music-player/jquery.min.js"></script>
+
+<!-- netease; qqkg -->
+<!--
+<script src="/js/music-player/player.js?library=config.music.library.js"></script>
+-->
+<script src="../../../../js/music-player/player.js?library=netease&music=https://kg.qq.com/node/play?s=7deFpz7Z26Jmv7di&g_f=share_html"></script>
+                
+                <!-- Music end -->
+
+                <!-- Sharing -->
+                
+                <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
+                <!--  css & js -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+                
+                <!-- Sharing -->
+
+                <!-- gitment start -->
+                
+                <!-- gitment end -->
+
+                <!-- 来必力City版安装代码 -->
+                
+                <!-- City版安装代码已完成 -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+    
+      
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="https://blog.csdn.net/d_Nail" target="_blank">Dusign&#39;s Blog</a></li>
+                    
+                        <li><a href="#" target="_blank">Dusign&#39;s Web</a></li>
+                    
+                        <li><a href="https://github.com/dusign" target="_blank">Dusign&#39;s Github</a></li>
+                    
+                        <li><a href="#" target="_blank">Other</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+
+
+<style  type="text/css">
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/dusign">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/dusignr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/Gang Du">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/dusignr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Goldwasser 2020 
+                    <br>
+                    Powered by 
+                    <a href="https://github.com/dusign/hexo-theme-snail" target="_blank" rel="noopener">
+                        <i>hexo-theme-snail</i>
+                    </a> | 
+                    <iframe name="star" style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0"
+                        width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=dusign&repo=hexo-theme-snail&type=star&count=true">
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- jQuery -->
+
+<script src="/js/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="/js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- Search -->
+
+<script src="/js/search.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://anang0g0.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Search -->
+
+    <script type="text/javascript">      
+        var search_path = "search.xml";
+        if (search_path.length == 0) {
+            search_path = "search.xml";
+        }
+    var path = "/" + search_path;
+    searchFunc(path, 'local-search-input', 'local-search-result');
+    </script>
+
+
+<!-- busuanzi -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+
+    
+        <!-- background effects line -->
+        
+
+        
+            <script type="text/javascript" src="/js/mouse-click.js" content='[&#34;🌱&#34;,&#34;just do it&#34;,&#34;🍀&#34;]' color='[&#34;rgb(121,93,179)&#34; ,&#34;rgb(76,180,231)&#34; ,&#34;rgb(184,90,154)&#34;]'></script>
+        
+
+        <!-- background effects end -->
+    
+
+    <!--<script size="50" alpha='0.3' zIndex="-999" src="/js/ribbonStatic.js"></script>-->
+    
+        <script src="/js/ribbonDynamic.js"></script>
+    
+</body>
+
+</html>
