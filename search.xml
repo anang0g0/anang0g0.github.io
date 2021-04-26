@@ -8,7 +8,7 @@
       <link href="2021/04/26/math/"/>
       <url>2021/04/26/math/</url>
       
-        <content type="html"><![CDATA[<p><span class="math display">\[ S_1 \rightarrow S_2 \]</span></p><h2 id="オイラーの公式">オイラーの公式</h2><p>オイラーの公式は以下のように与えられる。</p><p><span class="math display">\[ e^{i x} = \cos{x} + i \sin{x} \]</span></p><h2 id="論法">$ - $ 論法</h2><p>任意の $ &gt; 0 $ についてある $ &gt; 0 $ が存在して、任意の $ x  $ に対して $ 0 &lt; |x - a| &lt; $ ならば $ |f(x) - f(a)| &lt; $ を満たすとき $ f(x) $ は $ a $ で連続であるという。</p><p>引用元 ：https://qiita.com/tomtsutom0122/items/e0ab6b6ccbd369db1aa2</p>]]></content>
+        <content type="html"><![CDATA[<p><span class="math display">\[ S_1 \rightarrow S_2 \]</span></p><h2 id="オイラーの公式">オイラーの公式</h2><p>オイラーの公式は以下のように与えられる。</p><p><span class="math display">\[ e^{i x} = \cos{x} + i \sin{x} \]</span></p><h2 id="論法">$ - $ 論法</h2><p>任意の $ &gt; 0 $ についてある $ &gt; 0 $ が存在して、任意の $ x  $ に対して $ 0 &lt; |x - a| &lt; $ ならば $ |f(x) - f(a)| &lt; $ を満たすとき $ f(x) $ は $ a $ で連続であるという。</p><p>引用元 [text]：https://qiita.com/tomtsutom0122/items/e0ab6b6ccbd369db1aa2</p>]]></content>
       
       
       
