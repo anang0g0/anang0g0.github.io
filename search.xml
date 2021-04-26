@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>hard_times</title>
+      <link href="2021/04/26/hard-times/"/>
+      <url>2021/04/26/hard-times/</url>
+      
+        <content type="html"><![CDATA[<p>開発がやっと終わった。 大変な一年だった。 これを一生続けるなんて普通じゃない。 エンジニアにならなくて本当に良かった。 暗号化でOAEPとか本当はやることがあるんだけど、そこまでのニーズがあるかどうかがわからない。 署名とや応用をやってみれば？という意見もある。 でも、ちょっと休憩。 あとは定期的にバグ取り、高速化などメンテナンスになる。 久しぶりに数学でもやろう。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>math</title>
       <link href="2021/04/26/math/"/>
       <url>2021/04/26/math/</url>
